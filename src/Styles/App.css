@@ -1,0 +1,174 @@
+:root {
+  --primary: #a94727;
+  --primary-hover: #D25E37;
+  --secondary: #c78c76;
+  --tertiary: #712f1a;
+}
+
+/* TEXT COLOR */
+.text-color-primary {
+  color: var(--primary) !important;
+}
+
+a:hover.text-color-primary {
+  color: var(--primary-hover) !important;
+}
+
+.text-color-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-color-tertiary {
+  color: var(--tertiary) !important;
+}
+
+/* BACKGROUND COLOR */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-primary-hover {
+  background-color: var(--primary-hover) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary) !important;
+}
+
+/* BOUTONS */
+
+.btn {
+  border-width: 1px;
+  border-radius: 10px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-top: 5px !important;
+  padding-bottom: 10px !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background: var(--primary);
+  border-style: solid;
+  border-color: var(--primary);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.btn-primary:active,
+.btn-primary:hover {
+  color: var(--primary) !important;
+  background: #fff !important;
+  border-style: solid;
+  border-color: var(--primary) !important;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+}
+
+.btn-primary:disabled {
+  background: var(--tertiary);
+  border-color: var(--tertiary);
+}
+
+.btn-outline-primary {
+  color: var(--primary) !important;
+  background: #fff !important;
+  border-style: solid;
+  border-color: var(--primary) !important;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.btn-outline-primary:active,
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background: var(--primary) !important;
+  border-style: solid;
+  border-color: var(--primary) !important;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+/* BORDER */
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+/* CONTAINER */
+.content-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 640px) {
+  .content-container {
+      max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .content-container {
+      max-width: 768px;
+  }
+}
+
+/* FONTS */
+h1 {
+  font-size: 3rem/* 48px */;
+  line-height: 1;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5rem/* 24px */;
+  line-height: 2rem/* 32px */;
+  font-weight: 500;
+}
+
+/* FADE */
+.fader {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
